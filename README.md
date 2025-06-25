@@ -26,6 +26,12 @@ In short: PWAs are ideal for lightweight tools, internal apps, and cross-platfor
 
 ---
 
+## The PWAs
+
+- [phi-Calc](phi-calc/index.html)
+
+---
+
 ## How to install a PWA
 
 To install a PWA, open it in a supported browser. Most Chromium-based browsers support PWAs natively.
