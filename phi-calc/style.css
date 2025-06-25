@@ -1,0 +1,212 @@
+/* Allgemeine Standardschrift für body, p, etc. */
+@font-face {
+  font-family: 'Audiowide';
+  src: url('../fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('../fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansCondensed';
+  src: url('../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('../fonts/Saira/Saira-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SairaCondensed';
+  src: url('../fonts/Saira_Condensed/SairaCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SairaExtraCondensed';
+  src: url('../fonts/Saira_Extra_Condensed/SairaExtraCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SairaSemiCondensed';
+  src: url('../fonts/Saira_Semi_Condensed/SairaSemiCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SairaStencilOne';
+  src: url('../fonts/Saira_Stencil_One/SairaStencilOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Anwenden der allgemeinen Schrift */
+body {
+    font-family: 'IBMPlexSans';
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px;
+    padding: 15px;
+    /* background-color: #1e1e1e; */
+    background-color: #586E75;
+    color: #ffffff;
+    width: auto;
+}
+
+/* h1 mit eigener Schrift und Größe */
+h1 {
+  font-family: 'Audiowide';
+  font-size: 2.4em;
+  font-weight: normal;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+h2 {
+  font-family: 'IBMPlexSansCondensed';
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+h3 {
+  font-family: 'IBMPlexSansCondensed';
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+h6 {
+  font-family: 'IBMPlexSansCondensed';
+  font-size: 0.8em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+a {
+  font-family: 'IBMPlexSansCondensed';
+  font-size: inherit;
+}
+div#header {
+}
+div#header h1 {
+}
+div#header h1:after {
+  content: "\1F6C8";
+  margin-left: 0.25em;
+  font-size: 0.6em;
+  vertical-align: super;
+}
+div#header span {
+    display: none;
+}
+div#header span p {
+    font-size: inherit;
+}
+
+
+
+div#calculator {
+    font-family: 'IBMPlexSans';
+    font-size: inherit;
+}
+div#calculator input {
+    font-family: 'IBMPlexSans';
+    font-size: 1.2em;
+}
+div#calculator button {
+    font-family: 'IBMPlexSans';
+    font-size: 1.2em;
+}
+div#calculator h2 {
+    font-family: 'IBMPlexSans';
+    font-size: 1.2em;
+    text-align: left;
+}
+div#result {
+    font-family: 'IBMPlexSans';
+    font-size: inherit;
+}
+div#history {
+    font-family: 'IBMPlexSans';
+    font-size: inherit;
+}
+
+div#history h2 {
+    font-size: 1.2em;
+    text-align: left;
+}
+div#history span {
+    font-family: 'IBMPlexMono';
+    font-size: inherit;
+}
+
+input {
+    font-size: inherit;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    font-size: inherit;
+    width: 100%;
+    padding: 10px;
+    background-color: #3e8e41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #36a234;
+}
+a {
+  text-decoration: underline;
+  position: relative;
+  color: inherit;
+}
+a:focus   { color: inherit; }
+a:hover   { color: inherit; }
+a:active  { color: inherit; }
+a:before {
+  content: "\1F517 ";
+  margin-right: 0.25em;
+}
+a:hover {
+  transition: width 0.3s ease;
+  text-decoration-line: underline overline;
+}
+
