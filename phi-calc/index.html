@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>&#120593;Calc</title>
+    <script src="./math.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        }
+    </script>
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>&#120593;Calc</h1>
+        <h2>Everyone needs a powerful calculator.</h2>
+        <span>
+            <h3>Written by Andreas Zymny</h3>
+            <p>This lightweight progressice web app provides a powerful but simple calculator. Designed for everyday quick math, it lets you enter expressions directly—no buttons, no gimmicks, just results.</p>
+            <p>Under the hood, it's powered by <a href="https://mathjs.org/" target="_blank">math.js</a>, a robust and feature-rich math library. Thanks to math.js, the calculator can handle everything from basic arithmetic to advanced operations like unit conversions, matrix math, and even symbolic expressions. <a href="https://mathjs.org/docs/expressions/syntax.html" target="_blank">Discover the powers of math.js</a></p>
+        </span>
+    </div>
+    <div id="calculator">
+        <input type="text" id="expression" placeholder="e.g. f(x , y) = sqrt(x^2 + y^2); a = f(3, 4); b = f(5, 12); a + b">
+        <button id="calcButton">Calculate (or press Enter)</button>
+        <!--
+        <h2>Result:</h2>
+        <div id="result"></div>
+        -->
+    </div>
+    <div id="history">
+        <h2>History:</h2>
+        <span></span>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
